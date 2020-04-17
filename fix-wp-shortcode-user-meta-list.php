@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/fixonweb
  * Text Domain:     fix-wp-shortcode-user-meta-list
  * Domain Path:     /languages
- * Version:         0.1.8
+ * Version:         0.1.9
  *
  * @package         Fix_Wp_Shortcode_User_Meta_List
  */
@@ -38,6 +38,30 @@ function fix158713_parse_request( &$wp ) {
 
 add_shortcode("fix158713_niver", "fix158713_niver");
 function fix158713_niver($atts, $content = null){
+
+	?>
+	<div>
+		<div>
+			
+
+
+			<div>
+				<div>imagem</div>
+				<div>
+					<div>data</div>
+					<div>niver</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<div>
+			
+		</div>
+	</div>
+	<?php
+
 
 }
 

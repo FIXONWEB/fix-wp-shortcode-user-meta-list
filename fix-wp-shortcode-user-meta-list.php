@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/fixonweb
  * Text Domain:     fix-wp-shortcode-user-meta-list
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Fix_Wp_Shortcode_User_Meta_List
  */
@@ -17,8 +17,8 @@
 /* ATUALIZAÇÃO DESTE PLUGIN VIA GITHUB */
 require 'plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/fixonweb/backoffice',
+	'https://github.com/fixonweb/fix-wp-shortcode-user-meta-list',
 	__FILE__, 
-	'backoffice/backoffice'
+	'fix-wp-shortcode-user-meta-list/fix-wp-shortcode-user-meta-list'
 );
 

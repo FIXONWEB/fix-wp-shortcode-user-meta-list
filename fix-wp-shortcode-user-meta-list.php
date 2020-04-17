@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/fixonweb
  * Text Domain:     fix-wp-shortcode-user-meta-list
  * Domain Path:     /languages
- * Version:         0.1.5
+ * Version:         0.1.6
  *
  * @package         Fix_Wp_Shortcode_User_Meta_List
  */
@@ -38,12 +38,11 @@ function fix158713_parse_request( &$wp ) {
 
 add_shortcode("fix158713_user_list", "fix158713_user_list");
 function fix158713_user_list($atts, $content = null){
-	$go = 0;
-	if(current_user_can('administrator')) $go = 1;
-	if(current_user_can('fix-administrativo')) $go = 1;
-	if(current_user_can('subscriber')) $go = 1;
-
-	if(!$go) return '';
+	// $go = 0;
+	// if(current_user_can('administrator')) $go = 1;
+	// if(current_user_can('fix-administrativo')) $go = 1;
+	// if(current_user_can('subscriber')) $go = 1;
+	// if(!$go) return '';
 
 	extract(shortcode_atts(array(
 		"name" => 'nada',
@@ -91,7 +90,6 @@ function fix158713_user_list($atts, $content = null){
 		?>
 		<table>
 			<tr>
-				<th>E-mail</th>
 				<th>Nome</th>
 				<th>Sobrenome</th>
 				<th>Fone</th>
@@ -104,7 +102,6 @@ function fix158713_user_list($atts, $content = null){
 		while($row = $result->fetch_array(MYSQLI_ASSOC)){
 			?>
 			<tr>
-				<td><?=$row['user_email'] ?></td>
 				<td><?=$row['first_name'] ?></td>
 				<td><?=$row['last_name'] ?></td>
 				<td><?=$row['fone'] ?></td>

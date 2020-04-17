@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/fixonweb
  * Text Domain:     fix-wp-shortcode-user-meta-list
  * Domain Path:     /languages
- * Version:         0.1.9
+ * Version:         0.1.10
  *
  * @package         Fix_Wp_Shortcode_User_Meta_List
  */
@@ -39,6 +39,7 @@ function fix158713_parse_request( &$wp ) {
 add_shortcode("fix158713_niver", "fix158713_niver");
 function fix158713_niver($atts, $content = null){
 
+	ob_start();
 	?>
 	<div>
 		<div>
@@ -46,7 +47,7 @@ function fix158713_niver($atts, $content = null){
 
 
 			<div>
-				<div>imagem</div>
+				<div><img src="https://d1587143191.shoppbox.com.br/wp-content/uploads/2020/04/Captura-de-tela-de-2020-04-17-17-09-21.png"></div>
 				<div>
 					<div>data</div>
 					<div>niver</div>
@@ -62,7 +63,7 @@ function fix158713_niver($atts, $content = null){
 	</div>
 	<?php
 
-
+	return ob_get_clean();
 }
 
 add_shortcode("fix158713_user_list", "fix158713_user_list");

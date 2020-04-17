@@ -44,6 +44,9 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 = 0.1.2 =
 * Ajustes iniciais
 
+= 0.1.3 =
+* Ajustes iniciais
+
 == Upgrade Notice ==
 
 = 1.0 =
